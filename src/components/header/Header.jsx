@@ -4,10 +4,6 @@ const Header = () => {
   const [showInfo, setShowInfo] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  useEffect(() => {
-    console.log(showInfo);
-  }, [showInfo]);
-
   const handleMouseMove = (e) => {
     setPosition({ x: e.clientX, y: e.clientY });
   };
@@ -21,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-4/5 text-[1.8rem] mx-auto my-24 flex justify-between">
+    <header className="text-[1.8rem] my-24 flex justify-between">
       <div
         className=""
         onMouseMove={handleMouseMove}

@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
 import Header from "./components/header/header";
+import Project from "./components/proj-exp/Projects";
+import Exp from "./components/proj-exp/Experience";
 
 function App() {
-  const [section, setSection] = useState(true);
+  const [section, setSection] = useState(0);
 
-  const handleSection = () => {
-    if (section) {
-      setSection(false);
-    } else {
-      setSection(true);
-    }
+  const handleSection = (e) => {
+    setSection(e.target.value);
   };
 
   useEffect(() => {
@@ -17,15 +15,20 @@ function App() {
   });
 
   return (
-    <>
+    <div className="w-4/5 mx-auto">
       <Header />
-      <div className="w-full ">
+      <div className="">
         <ul className="w-1/4 m-auto py-10 flex justify-around md:justify-center items-center gap-10 text-[1.5rem]">
-          <li onClick={handleSection}>Projects</li>
-          <li onClick={handleSection}>Experience</li>
+          <li value="0" onClick={handleSection}>
+            Projects
+          </li>
+          <li value="1" onClick={handleSection}>
+            Experience
+          </li>
         </ul>
+        {section == 0 ? <Project /> : <Exp />}
       </div>
-    </>
+    </div>
   );
 }
 
