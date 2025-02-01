@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        header: "clamp(1rem, 2vw, 1.8rem)",
+      },
+    },
     screens: {
       xl: { max: "1279px" },
       // => @media (max-width: 1279px) { ... }

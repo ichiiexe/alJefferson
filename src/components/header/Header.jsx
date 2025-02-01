@@ -28,21 +28,27 @@ const Header = () => {
         onMouseEnter={handleOver}
         onMouseLeave={handleOut}
       >
-        <h1 className="relative">[Albert J. Abuy]</h1>
+        <h1 className="relative text-header">[Albert J. Abuy]</h1>
         {showInfo && (
           <div
-            className="absolute w-1/3 bg-black"
+            className="absolute bg-[#b0b0b0] p-2 flex"
             style={{
               top: position.y,
               left: position.x,
             }}
           >
-            hello
+            <img className="w-40" src="/public/unnamed.jpg" />
+            <div>
+              <h1>Albert Jefferson Abuy</h1>
+              <h2>Software Engineer</h2>
+            </div>
           </div>
         )}
       </div>
 
-      <a download={null}>Resume [+]</a>
+      <a className="text-header" download={null}>
+        Resume [+]
+      </a>
     </header>
   );
 };
