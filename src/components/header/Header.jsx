@@ -17,8 +17,8 @@ const Header = () => {
       <div className="" onClick={handleClick}>
         <h1 className="relative text-header">[Albert J. Abuy]</h1>
         {showInfo && (
-          <div className="absolute bg-[#b0b0b0] p-2 flex z-50 left-0">
-            <img className="" src="/public/unnamed.jpg" />
+          <div className="absolute bg-[#b0b0b0] w-1/5 p-2 flex z-50">
+            <img className="max-w-40" src="/public/unnamed.jpg" />
             <div>
               <h1>Albert Jefferson Abuy</h1>
               <h2>Software Engineer</h2>
@@ -27,7 +27,11 @@ const Header = () => {
         )}
       </div>
 
-      <a className="text-header" href="/">
+      <a
+        className="text-header"
+        download
+        href="/public/Albert_Jefferson_Abuy_-_Software_Engineer.pdf"
+      >
         Resume [+]
       </a>
     </header>
