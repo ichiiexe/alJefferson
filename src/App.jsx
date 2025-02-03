@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="w-4/5 mx-auto">
       <Header />
-      <div className="">
+      <div className="flex flex-col justify-center items-center">
         <ul className="w-1/4 m-auto py-10 flex justify-around md:justify-center items-center gap-10 text-[1.5rem]">
           <li value="0" onClick={handleSection}>
             Projects

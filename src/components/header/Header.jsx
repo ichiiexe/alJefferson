@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <header className="text-[1.8rem] my-24 flex justify-between">
+    <header className="my-24 flex justify-between">
       <div
         className=""
         onMouseMove={handleMouseMove}
