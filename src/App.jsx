@@ -21,14 +21,14 @@ function App() {
         <ul className="w-1/4 m-auto py-10 flex justify-around md:justify-center items-center gap-10 text-[1.5rem] mb-20">
           <li
             value="0"
-            className={section == 0 && "underline underline-offset-4"}
+            className={section == 0 ? "underline underline-offset-4" : <></>}
             onClick={handleSection}
           >
             Projects
           </li>
           <li
             value="1"
-            className={section == 1 && "underline underline-offset-4"}
+            className={section == 1 ? "underline underline-offset-4" : <></>}
             onClick={handleSection}
           >
             Experience
