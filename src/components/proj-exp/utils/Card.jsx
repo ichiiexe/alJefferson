@@ -30,7 +30,7 @@ const Card = (props) => {
             show ? "bg-opacity-50" : "bg-opacity-0"
           }`}
         >
-          <a href="">
+          <a href={props.github} target="blank">
             <MaterialSymbol
               className={`inline cursor-pointer ${
                 show ? "opacity-100" : "opacity-0"
@@ -40,7 +40,7 @@ const Card = (props) => {
               fill
             />
           </a>
-          <a href="">
+          <a href={props.link} target="_blank">
             <MaterialSymbol
               className={`inline cursor-pointer ${
                 show ? "opacity-100" : "opacity-0"

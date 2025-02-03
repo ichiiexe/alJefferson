@@ -42,7 +42,11 @@ const Header = () => {
         )}
       </div>
 
-      <a className="text-header" download={null}>
+      <a
+        className="text-header"
+        download
+        href="/public/Albert_Jefferson_Abuy_-_Software_Engineer.pdf"
+      >
         Resume [+]
       </a>
     </header>
