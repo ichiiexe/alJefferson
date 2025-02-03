@@ -26,25 +26,33 @@ const Card = (props) => {
       >
         <img className="w-full h-full object-cover" src={props.img} />
         <div
-          className={`w-full h-full absolute bg-black z-10 top-0 cursor-pointer text-white p-4 flex justify-end gap-2 transition-all duration-75 ${
+          className={`w-full h-full absolute bg-black z-10 top-0 text-white p-4 text-right transition-all duration-75 ${
             show ? "bg-opacity-50" : "bg-opacity-0"
           }`}
         >
-          <MaterialSymbol
-            className={show ? "opacity-100" : "opacity-0"}
-            icon="code"
-            size={24}
-            fill
-          />
-          <MaterialSymbol
-            className={show ? "opacity-100" : "opacity-0"}
-            icon="public"
-            size={24}
-            fill
-          />
+          <a href="">
+            <MaterialSymbol
+              className={`inline cursor-pointer ${
+                show ? "opacity-100" : "opacity-0"
+              }`}
+              icon="code"
+              size={24}
+              fill
+            />
+          </a>
+          <a href="">
+            <MaterialSymbol
+              className={`inline cursor-pointer ${
+                show ? "opacity-100" : "opacity-0"
+              }`}
+              icon="public"
+              size={24}
+              fill
+            />
+          </a>
         </div>
       </div>
-      <h1>{props.title}</h1>
+      <h1 className="p-4">{props.title}</h1>
     </div>
   );
 };
