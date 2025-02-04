@@ -19,7 +19,9 @@ function App() {
           <li
             value="0"
             className={
-              section == 0 ? "underline underline-offset-4" : "cursor-pointer"
+              section == 0
+                ? "underline underline-offset-4 font-semibold transition-all duration-50"
+                : "cursor-pointer opacity-50"
             }
             onClick={handleSection}
           >
@@ -28,7 +30,9 @@ function App() {
           <li
             value="1"
             className={
-              section == 1 ? "underline underline-offset-4" : "cursor-pointer"
+              section == 1
+                ? "underline underline-offset-4 font-semibold transition-all duration-50"
+                : "cursor-pointer opacity-50"
             }
             onClick={handleSection}
           >

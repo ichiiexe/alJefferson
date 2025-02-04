@@ -5,6 +5,7 @@ export default {
     extend: {
       fontSize: {
         header: "clamp(1rem, 2vw, 1.8rem)",
+        largeheader: "clamp(1rem, 5vw, 5rem) ",
       },
     },
     screens: {

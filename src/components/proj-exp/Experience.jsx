@@ -4,7 +4,7 @@ import { motion, useSpring } from "framer-motion";
 const Exp = (props) => {
   return (
     <motion.div
-      className="text-[5rem] m-auto"
+      className="text-largeheader m-auto"
       initial={{ translateY: -50, opacity: 0 }}
       animate={{ translateY: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
