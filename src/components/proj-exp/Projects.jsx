@@ -30,9 +30,9 @@ const Project = () => {
       <motion.div variants={gridItem}>
         <Card
           img={"/projects/splitter-tipper.png"}
-          github=""
-          link=""
-          title="Splitter-Tipper"
+          github="https://github.com/ichiiexe/tipper-splitter-"
+          link="https://ichiiexe.github.io/tipper-splitter-/"
+          title="Tipper/Splitter"
         />
       </motion.div>
       <motion.div variants={gridItem}>
