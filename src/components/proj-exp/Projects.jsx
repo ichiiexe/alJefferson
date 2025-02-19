@@ -1,4 +1,10 @@
 import Card from "./utils/Card";
+import tipper from "/projects/splitter-tipper.png";
+import portfolio from "/projects/portfoliov2.png";
+import animeApp from "/projects/anime-app.png";
+import trackerApp from "/projects/riotApp.png";
+import weatherApp from "/projects/Screenshot 2025-01-31 014554.png";
+
 import { motion, transform } from "framer-motion";
 
 const gridVariants = {
@@ -21,7 +27,7 @@ const Project = () => {
     >
       <motion.div variants={gridItem}>
         <Card
-          img={"/projects/Screenshot 2025-01-31 014554.png"}
+          img={weatherApp}
           github="https://github.com/ichiiexe/weatherAPI-"
           link="https://ichiiexe.github.io/weatherAPI-/"
           title="Weatherizt"
@@ -29,7 +35,7 @@ const Project = () => {
       </motion.div>
       <motion.div variants={gridItem}>
         <Card
-          img={"/projects/splitter-tipper.png"}
+          img={tipper}
           github="https://github.com/ichiiexe/tipper-splitter-"
           link="https://ichiiexe.github.io/tipper-splitter-/"
           title="Tipper/Splitter"
@@ -37,7 +43,7 @@ const Project = () => {
       </motion.div>
       <motion.div variants={gridItem}>
         <Card
-          img={"/projects/portfoliov2.png"}
+          img={portfolio}
           github="https://github.com/ichiiexe/portfoliov2"
           link="https://ichiiexe.github.io/portfoliov2/"
           title="Portfolio"
@@ -45,7 +51,7 @@ const Project = () => {
       </motion.div>
       <motion.div variants={gridItem}>
         <Card
-          img={"/projects/anime-app.png"}
+          img={animeApp}
           github=""
           link=""
           title="Anime Streaming (ongoing)"
@@ -53,7 +59,7 @@ const Project = () => {
       </motion.div>
       <motion.div variants={gridItem}>
         <Card
-          img={"/projects/riotApp.png"}
+          img={trackerApp}
           github=""
           link=""
           title="Riot StatTrak (ongoing)"
