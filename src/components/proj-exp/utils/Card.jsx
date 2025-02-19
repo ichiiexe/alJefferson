@@ -1,9 +1,14 @@
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { MaterialSymbol } from "react-material-symbols";
 import "react-material-symbols/outlined";
 
 const Card = (props) => {
   const [show, setShow] = useState(null);
+  const gridItem = {
+    inv: { opacity: 0, translateY: -50 },
+    vis: { opacity: 1, translateY: 0 },
+  };
   const handleHover = () => {
     setShow(true);
   };
@@ -13,7 +18,7 @@ const Card = (props) => {
   };
 
   return (
-    <div className="">
+    <motion.div variants={gridItem}>
       <div
         className="h-[300px] relative "
         onMouseEnter={handleHover}
@@ -48,7 +53,7 @@ const Card = (props) => {
         </div>
       </div>
       <h1 className="p-4">{props.title}</h1>
-    </div>
+    </motion.div>
   );
 };
 
