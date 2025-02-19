@@ -8,7 +8,7 @@ const Header = () => {
         <h1 className="relative text-header">[Albert J. Abuy]</h1>
       </div>
       <a
-        className="text-header"
+        className="text-header relative"
         download
         href="/public/Albert_Jefferson_Abuy_-_Software_Engineer.pdf"
       >

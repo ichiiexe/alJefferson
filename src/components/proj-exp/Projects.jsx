@@ -56,7 +56,7 @@ const Project = () => {
           img={"/projects/riotApp.png"}
           github=""
           link=""
-          title="Riot Game Tracker (ongoing)"
+          title="Riot StatTrak (ongoing)"
         />
       </motion.div>
     </motion.div>
