@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Header from "./components/header/header";
+import Me from "./components/me/Me";
 import Project from "./components/proj-exp/Projects";
 import Exp from "./components/proj-exp/Experience";
 
@@ -14,7 +15,8 @@ function App() {
   return (
     <div className="w-4/5 mx-auto">
       <Header />
-      <div className="flex flex-col justify-center items-center">
+      <Me />
+      <div className="flex flex-col justify-center items-center ">
         <ul className="w-1/4 m-auto py-10 flex justify-around md:justify-center items-center gap-10 text-[1.5rem] mb-20">
           <li
             value="0"

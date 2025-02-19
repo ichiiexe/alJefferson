@@ -2,8 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
+@theme {
   --bg-clr: #f6f6f6;
   --prim-clr: #f4f4f4;
   --sec-clr: #b0b0b0;
@@ -13,7 +12,9 @@
   --body-head: 2.25rem;
   --body-sub: 2rem;
   --body-text: 1.8rem;
+}
 
+:root {
   font-size: 62.5%;
 }
 

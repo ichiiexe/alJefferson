@@ -6,6 +6,9 @@ export default {
       fontSize: {
         header: "clamp(1rem, 2vw, 1.8rem)",
         largeheader: "clamp(1rem, 5vw, 5rem) ",
+        title: "clamp(1.5rem, 2vw, 2.2rem)",
+        subtitle: "clamp(1rem, 2vw, 1.8rem)",
+        p: "clamp(1rem, 2vw, 1.2rem)",
       },
     },
     screens: {

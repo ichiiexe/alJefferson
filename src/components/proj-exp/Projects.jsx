@@ -51,6 +51,14 @@ const Project = () => {
           title="Anime Streaming (ongoing)"
         />
       </motion.div>
+      <motion.div variants={gridItem}>
+        <Card
+          img={"/projects/riotApp.png"}
+          github=""
+          link=""
+          title="Riot Game Tracker (ongoing)"
+        />
+      </motion.div>
     </motion.div>
   );
 };
