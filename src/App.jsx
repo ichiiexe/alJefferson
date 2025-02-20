@@ -13,11 +13,11 @@ function App() {
   };
 
   return (
-    <div className="w-4/5 mx-auto">
+    <div className="w-4/5 mx-auto ">
       <Header />
       <Me />
       <div className="flex flex-col justify-center ">
-        <ul className="w-1/4 m-auto  py-10 flex justify-around md:justify-center items-center gap-10 text-[1.5rem] mb-20">
+        <ul className="w-1/4 m-auto py-10 flex justify-around md:justify-center items-center gap-10 text-[1.5rem] my-10">
           <li
             value="0"
             className={

@@ -18,13 +18,19 @@ const Card = (props) => {
   };
 
   return (
-    <motion.div variants={gridItem}>
+    <motion.div
+      variants={gridItem}
+      className="rounded-md shadow-lg border-[1px] border-opacity-85 overflow-hidden p-2"
+    >
       <div
         className="h-[300px] relative "
         onMouseEnter={handleHover}
         onMouseLeave={handleLeave}
       >
-        <img className="w-full h-full object-cover" src={props.img} />
+        <img
+          className="w-full h-full object-cover rounded-md"
+          src={props.img}
+        />
         <div
           className={`w-full h-full absolute bg-black z-10 top-0 text-white p-4 text-right transition-all duration-500 ${
             show ? "bg-opacity-50" : "bg-opacity-0"
