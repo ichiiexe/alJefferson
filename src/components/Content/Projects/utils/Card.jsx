@@ -20,7 +20,8 @@ const Card = (props) => {
   return (
     <motion.div
       variants={gridItem}
-      className="rounded-md shadow-lg border-[1px] border-opacity-85 overflow-hidden p-2"
+      whileHover={{ scale: 1.1 }}
+      className="rounded-md overflow-hidden p-2 text-center"
     >
       <div
         className="h-[300px] relative "

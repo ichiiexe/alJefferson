@@ -1,12 +1,12 @@
-import Card from "./utils/Card";
-import GridCont from "./utils/GridCont";
 import tipper from "/projects/splitter-tipper.png";
 import portfolio from "/projects/portfoliov2.png";
 import animeApp from "/projects/anime-app.png";
 import trackerApp from "/projects/riotApp.png";
 import weatherApp from "/projects/Screenshot 2025-01-31 014554.png";
+import Grid from "../utils/Grid";
+import Card from "./utils/Card";
 
-const Project = () => {
+const Projects = (ref) => {
   const projectData = [
     {
       img: weatherApp,
@@ -39,9 +39,8 @@ const Project = () => {
       title: "Riot StatTrak (ongoing)",
     },
   ];
-
   return (
-    <GridCont>
+    <Grid>
       {projectData.map((item) => (
         <Card
           img={item.img}
@@ -50,8 +49,8 @@ const Project = () => {
           title={item.title}
         />
       ))}
-    </GridCont>
+    </Grid>
   );
 };
 
-export default Project;
+export default Projects;

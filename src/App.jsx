@@ -1,55 +1,57 @@
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import Header from "./components/header/header";
-import Me from "./components/me/Me";
-import Project from "./components/proj-exp/Projects";
-import History from "./components/proj-exp/History";
+import { useEffect, useState, useRef } from "react";
+import { animate, motion, useInView, useScroll } from "framer-motion";
+import Header from "./components/Content/Header/Header";
+import Nav from "./components/Content/utils/Nav";
+import Layout from "./components/Layout/Layout";
+import About from "./components/Content/About/About";
+import Projects from "./components/Content/Projects/Projects";
+import Experience from "./components/Content/Experience/Experience";
+import Container from "./components/Content/utils/Container";
 
 function App() {
-  const [section, setSection] = useState(0);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const handleSection = (e) => {
-    setSection(e.target.value);
+  const containerRef = useRef(null);
+  const aboutRef = useRef(null);
+  const projectRef = useRef(null);
+  const experienceRef = useRef(null);
+
+  const toggleTheme = () => {
+    setIsDarkMode((prevMode) => !prevMode);
   };
 
+  useEffect(() => {
+    const containers = document.querySelectorAll("div.snap-center");
+  }, [aboutRef]);
+
   return (
-    <div className="w-4/5 mx-auto ">
-      <Header />
-      <Me />
-      <div className="flex flex-col justify-center ">
-        <ul className="w-1/4 m-auto py-10 flex justify-around md:justify-center items-center gap-10 text-[1.5rem] my-10">
-          <li
-            value="0"
-            className={
-              section == 0
-                ? "underline underline-offset-4 font-semibold transition-all duration-50"
-                : "cursor-pointer opacity-50"
-            }
-            onClick={handleSection}
-          >
-            Projects
-          </li>
-          <li
-            value="1"
-            className={
-              section == 1
-                ? "underline underline-offset-4 font-semibold transition-all duration-50"
-                : "cursor-pointer opacity-50"
-            }
-            onClick={handleSection}
-          >
-            Experience
-          </li>
-        </ul>
-        {section == 0 ? (
-          <Project />
-        ) : (
-          <>
-            <History />
-          </>
-        )}
-      </div>
-    </div>
+    <motion.div
+      initial={false}
+      animate={{
+        backgroundColor: isDarkMode ? "#1a1a1a" : "#ffffff",
+        color: isDarkMode ? "#ffffff" : "#1a1a1a",
+      }}
+      transition={{ duration: 0.5 }}
+      ref={containerRef}
+      className="h-dvh flex justify-center"
+    >
+      <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+      <Nav />
+
+      <Layout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+        <Container ref={aboutRef}>
+          <About />
+        </Container>
+        <Container ref={projectRef}>
+          <h1>Projects</h1>
+          <Projects />
+        </Container>
+        <Container ref={experienceRef}>
+          <h1>Projects</h1>
+          <Experience />
+        </Container>
+      </Layout>
+    </motion.div>
   );
 }
 
