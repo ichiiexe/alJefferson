@@ -11,8 +11,7 @@ const ThemeButton = ({ toggleTheme, isDarkMode }) => {
         onClick={toggleTheme}
         className="material-symbols-outlined text-[clamp(1.2rem,3vw,2.4rem)] p-2 rounded-full"
         style={{
-          backgroundColor: isDarkMode ? "#ffffff" : "#000000",
-          color: isDarkMode ? "#000000" : "#ffffff",
+          color: isDarkMode ? "#ffffff" : "#1a1a1a",
         }}
       >
         <MaterialSymbol

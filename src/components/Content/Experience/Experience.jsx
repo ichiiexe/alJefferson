@@ -1,7 +1,7 @@
 import athTechLogo from "/education/athtech-logo-color.png";
 import kmb from "/education/kissmybutton_logo1.png";
 import Grid from "../utils/Grid";
-import ExpCard from "../utils/ExpCard";
+import ExpCard from "./utils/ExpCard";
 
 const Education = () => {
   return (

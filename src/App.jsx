@@ -35,20 +35,18 @@ function App() {
       ref={containerRef}
       className="h-dvh flex justify-center"
     >
-      <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-      <Nav />
-
       <Layout toggleTheme={toggleTheme} isDarkMode={isDarkMode}>
+        <Header toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
         <Container ref={aboutRef}>
           <About />
-        </Container>
-        <Container ref={projectRef}>
-          <h1>Projects</h1>
-          <Projects />
         </Container>
         <Container ref={experienceRef}>
           <h1>Projects</h1>
           <Experience />
+        </Container>
+        <Container ref={projectRef}>
+          <h1>Projects</h1>
+          <Projects />
         </Container>
       </Layout>
     </motion.div>

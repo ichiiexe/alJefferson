@@ -4,7 +4,7 @@ import ThemeButton from "./Button";
 const Header = ({ toggleTheme, isDarkMode }) => {
   return (
     <motion.header
-      className="absolute right-0 text-p p-10 w-full flex justify-between"
+      className="text-p p-10 flex justify-between mx-auto"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}

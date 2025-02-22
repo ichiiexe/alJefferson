@@ -4,16 +4,20 @@ import TechStack from "./utils/TechStack";
 
 export const About = ({ isDarkMode }) => {
   return (
-    <div className="h-[50vh] my-20">
-      <div className=" flex justify-center items-center gap-4 p-4 mobilem:flex-col ">
+    <div className=" w-full flex flex-col items-center justify-center">
+      <div className="flex items-center gap-4 p-4 mobilem:flex-col ">
         <img
           className="w-[clamp(150px,2vw,500px)] rounded-full"
           src={profilePhoto}
         />
-        <div className="flex flex-col m-4 gap-4 w-full">
-          <h1 className="text-title">Hi ,👋I'm </h1>
-          <h1 className="text-title pl-4">Albert Jefferson Abuy</h1>
-          <h1 className="text-subtitle">I'm a Frontend Engineer</h1>
+        <div className=" em-4 gap-4 w-full">
+          <h1 className="text-title leading-snug">Hi ,👋I'm </h1>
+          <h1 className="text-title pl-4 leading-snug font-bold">
+            Albert Jefferson Abuy
+          </h1>
+          <h1 className="text-subtitle leading-snug">
+            I'm a Frontend Developer
+          </h1>
           <Details />
         </div>
       </div>

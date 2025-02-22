@@ -10,7 +10,7 @@ const Grid = ({ title, children }) => {
       variants={gridVariants}
       initial="inv"
       animate="vis"
-      className="grid grid-cols-[repeat(3,clamp(200px,33%,300px))] justify-center gap-4 tablet:grid-cols-2 mobilem:grid-cols-1"
+      className="grid grid-cols-[repeat(3,clamp(200px,33%,300px))] justify-center gap-4 laptop:grid-cols-2 mobilem:grid-cols-1"
     >
       {children}
     </motion.div>

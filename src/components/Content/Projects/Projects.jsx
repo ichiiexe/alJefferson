@@ -20,12 +20,12 @@ const Projects = (ref) => {
       link: "https://ichiiexe.github.io/tipper-splitter-/",
       title: "Tipper/Splitter",
     },
-    {
-      img: portfolio,
-      github: "https://github.com/ichiiexe/portfoliov2",
-      link: "https://ichiiexe.github.io/portfoliov2/",
-      title: "Portfolio",
-    },
+    // {
+    //   img: portfolio,
+    //   github: "https://github.com/ichiiexe/portfoliov2",
+    //   link: "https://ichiiexe.github.io/portfoliov2/",
+    //   title: "Portfolio",
+    // },
     {
       img: animeApp,
       github: "",
